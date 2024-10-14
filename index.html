@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <title>Feliz Cumpleaños Kati</title>
+    <link rel="icon" href="./Img/pastel.png" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+  </head>
+  <body data-bs-theme="light">
+    <nav id="desktop-nav">
+      <div class="logo">Katia Luz</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#Dedicatoria">Dedicatoria</a></li>
+          <li><a href="#Hobbies">Hobbies</a></li>
+          <li><a href="#Gustos">Gustos</a></li>
+          <li><a href="#Metas">Metas</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Katia Luz</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#Dedicatoria" onclick="toggleMenu()">Dedicatoria</a></li>
+            <li><a href="#Hobbies" onclick="toggleMenu()">Hobbies</a></li>
+            <li><a href="#Gustos" onclick="toggleMenu()">Gustos</a></li>
+            <li><a href="#Metas" onclick="toggleMenu()">Metas</a></li>
+          </ul>
+        </div>        
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./Img/kati.png" alt="Katia" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola</p>
+        <h1 class="title">Katia Luz</h1>
+        <p class="section__text__p2">Feliz Cumpleaños</p>
+
+        <div class="btn-container">
+          <button class="btn btn-color-2"
+          onclick="window.location.href='./flowers.html'">Flores</button>
+          <button class="btn btn-color-1" onclick="togglePlayPause()">Música</button>
+          <audio id="myAudio" src="./Img/Rewrite The Stars.mp3" style="display:none;" loop></audio>
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./Img/facebook.png"
+            alt="My facebook profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/katy.zul.7?mibextid=ZbWKwL'"
+          />
+          <img
+            src="./Img/tiktok.png"
+            alt="My tiktok profile"
+            class="icon"
+            onclick="location.href='https://www.tiktok.com/@katia_luz_?_t=8pxmpnHnsCU&_r=1'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="Dedicatoria">
+      <p class="section__text__p1">Para la mejor novia del mundo</p>
+      <h1 class="title">Dedicatoria especial</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./Img/katia.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./Img/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Colegio</h3>
+              <p>Jose Antonio Encinas</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./Img/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Universidad Nacional</h3>
+              <p>San Antonio Abad del Cusco</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Mi hermosa Katia Luz, mi niña<br>
+              ¡Feliz cumpleaños! No puedo creer que hoy celebremos otro año de ti. 
+              Eres increíble y cada día a tu lado es un regalo. 
+              Me encanta cómo siempre traes alegría a cualquier momento y cómo haces que todo sea más especial.
+              <br> <br>
+              Espero que este año te traiga todo lo que deseas, porque realmente te lo mereces. 
+              Te amo mucho, y me emociona pensar en todos los momentos que vamos a seguir compartiendo. Hoy, en tu día, 
+              lo vamos a disfrutar juntos, creando recuerdos que siempre llevaré en mi corazón.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Hobbies">
+      <p class="section__text__p1">Explorando sus</p>
+      <h1 class="title">Hobbies</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Día</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Img/paseo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Salir de paseo</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Img/caminar.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Caminar</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Img/helado.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Comer helado</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Img/parque.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ir a parques</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Img/rio.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ir al río</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Img/musica.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Escucha Música</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Noche</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Img/hablar.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Platicar</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Img/cafe.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tomar café</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Img/comida.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Comer comida no saludable</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Img/mirador.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ir a los miradores</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Img/plaza.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ver plazas de noche</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Img/video.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ver videos</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Gustos">
+      <p class="section__text__p1">Mi niña tus</p>
+      <h1 class="title">Gustos y Preferencias</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Img/chocolate.jpg"
+                alt="chocolate"
+                class="project-img"
+              />
+            </div>
+            <p class="text-1">Postre</p>
+            <h2 class="experience-sub-title project-title">Torta de Chocolate</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Img/libro.jpg"
+                alt="libro"
+                class="project-img"
+              />
+            </div>
+            <p class="text-1">Libro</p>
+            <h2 class="experience-sub-title project-title">Boulevard</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Img/voley.jpg"
+                alt="voley"
+                class="project-img"
+              />
+            </div>
+            <p class="text-1">Deporte</p>
+            <h2 class="experience-sub-title project-title">Voley</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Img/historia.jpg"
+                alt="historia"
+                class="project-img"
+              />
+            </div>
+            <p class="text-1"> Profesión </p>
+            <h2 class="experience-sub-title project-title">Historia</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Img/Rewrite The Stars.jpg"
+                alt="musica"
+                class="project-img"
+              />
+            </div>
+            <p class="text-1">Música</p>
+            <h2 class="experience-sub-title project-title">Rewrite The Stars</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Img/onepiece.jpg"
+                alt="anime"
+                class="project-img"
+              />
+            </div>
+            <p class="text-1">Anime</p>
+            <h2 class="experience-sub-title project-title">One Piece</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Img/girasol.jpg"
+                alt="girasol"
+                class="project-img"
+              />
+            </div>
+            <p class="text-1">Flores</p>
+            <h2 class="experience-sub-title project-title">Girasol</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Img/daemon.jpg"
+                alt="daemon"
+                class="project-img"
+              />
+            </div>
+            <p class="text-1"> Mascota </p>
+            <h2 class="experience-sub-title project-title">Daemon</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Metas">
+      <p class="section__text__p1">A futuro</p>
+      <h1 class="title">Sueños y Metas</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+        <img src="./Img/katial.jpg">
+          <p>Hoy quiero celebrar a la increíble persona que eres. 
+            Sé que estás estudiando historia porque es lo que toca, pero admiro tu capacidad para enfrentar los desafíos y seguir adelante con tus metas. 
+            Estoy seguro de que en unos años te veré como una profesional destacada, utilizando tus conocimientos para marcar la diferencia. 
+            Que este nuevo año te traiga muchas oportunidades para crecer y brillar en lo que realmente te apasiona. Siempre estaré a tu lado apoyándote en cada paso. 
+            <br>
+            Te amo.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#Dedicatoria">Dedicatoria</a></li>
+            <li><a href="#Hobbies">Hobbies</a></li>
+            <li><a href="#Gustos">Gustos</a></li>
+            <li><a href="#Metas">Metas</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 David Edis</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
